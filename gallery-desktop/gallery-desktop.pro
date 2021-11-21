@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     AlbumListWidget.cpp \
     AlbumWidget.cpp \
+    GalleryWidget.cpp \
     PictureDelegate.cpp \
     PictureWidget.cpp \
     ThumbnailProxyModel.cpp \
@@ -20,6 +21,7 @@ SOURCES += \
 HEADERS += \
     AlbumListWidget.h \
     AlbumWidget.h \
+    GalleryWidget.h \
     MainWindow.h \
     PictureDelegate.h \
     PictureWidget.h \
@@ -28,6 +30,7 @@ HEADERS += \
 FORMS += \
     AlbumListWidget.ui \
     AlbumWidget.ui \
+    GalleryWidget.ui \
     MainWindow.ui \
     PictureWidget.ui
 
