@@ -57,7 +57,7 @@ void AlbumWidget::setAlbumModel(AlbumModel *albumModel)
     });
 }
 
-void AlbumWidget::setAlbumSelectiionModel(QItemSelectionModel *albumSelectionModel)
+void AlbumWidget::setAlbumSelectionModel(QItemSelectionModel *albumSelectionModel)
 {
     mAlbumSelectionModel = albumSelectionModel;
 

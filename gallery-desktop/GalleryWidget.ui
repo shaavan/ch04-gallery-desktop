@@ -13,26 +13,14 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="AlbumListWidget" name="albumListWidget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>60</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="AlbumWidget" name="albumWidget" native="true">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>190</y>
-     <width>120</width>
-     <height>80</height>
-    </rect>
-   </property>
-  </widget>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="AlbumListWidget" name="albumListWidget" native="true"/>
+   </item>
+   <item>
+    <widget class="AlbumWidget" name="albumWidget" native="true"/>
+   </item>
+  </layout>
  </widget>
  <customwidgets>
   <customwidget>
