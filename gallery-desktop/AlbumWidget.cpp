@@ -7,6 +7,7 @@
 #include "AlbumModel.h"
 #include "PictureModel.h"
 #include "ThumbnailProxyModel.h"
+#include "PictureDelegate.h"
 
 AlbumWidget::AlbumWidget(QWidget *parent) :
     QWidget(parent),
@@ -23,6 +24,8 @@ AlbumWidget::AlbumWidget(QWidget *parent) :
     ui->thumbnailListView->setResizeMode(QListView::Adjust);
     ui->thumbnailListView->setFlow(QListView::LeftToRight);
     ui->thumbnailListView->setWrapping(true);
+    ui->thumbnailListView->setItemDelegate(
+                new PictureDelegate(this));
 
     connect(ui->thumbnailListView, &QListView::doubleClicked,
     this, &AlbumWidget::pictureActivated);
